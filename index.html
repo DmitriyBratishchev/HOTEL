@@ -4,48 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Отели</title>
+    <!-- <link rel="stylesheet" href="/css/normalize.css" /> -->
+    <!-- <link rel="stylesheet" href="/css/style.css" /> -->
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <a href="" class="logo">
-          <img src="/img/Logo.png" alt="Lagoona сеть отелей" class="logo-img" />
-        </a>
-        <a href="tel:+79453225448" class="header-tel">+7 (945) 322-54-48</a>
-        <a href="" class="private-office gold">Личный кабинет</a>
-        <nav class="nav">
-          <ul class="nav-list text">
-            <li class="nav-item">
-              <a href="#About-Us" class="nav-link">О нас</a>
-            </li>
-            <li class="nav-item">
-              <a href="#services" class="nav-link">Услуги</a>
-            </li>
-            <li class="nav-item">
-              <a href="#plus" class="nav-link">Преимущества</a>
-            </li>
-            <li class="nav-item">
-              <a href="#placing" class="nav-link">Размещение</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">Блог</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contacts" class="nav-link">Контакты</a>
-            </li>
-          </ul>
+        <div class="header-top">
+          <a href="" class="logo">
+            <img
+              src="/img/Logo.png"
+              alt="Lagoona сеть отелей"
+              class="header-logo-img"
+            />
+          </a>
+          <a href="tel:+79453225448" class="header-tel">+7 (945) 322-54-48</a>
+          <span class="header-tel-time">с 9 до 20</span>
           <input type="text" class="scan" />
-        </nav>
+          <a href="" class="header-private-office gold">Личный кабинет</a>
+        </div>
+        <div class="header-bottom">
+          <nav class="header-nav">
+            <ul class="header-nav-fast-list">
+              <li class="header-nav-fast-item">
+                <a href="#reserv" class="header-nav-fast-reserv"
+                  >Быстрая бронь</a
+                >
+              </li>
+              <li class="header-nav-fast-item">
+                <a href="#Special-offer" class="header-nav-fast-Special-offer"
+                  >Спецпредложения</a
+                >
+              </li>
+            </ul>
+            <ul class="header-nav-list text">
+              <li class="header-nav-item">
+                <a href="#About-Us" class="nav-link">О нас</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="#services" class="nav-link">Услуги</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="#plus" class="nav-link">Преимущества</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="#placing" class="nav-link">Размещение</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="#blog" class="header-nav-link">Блог</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="#contacts" class="nav-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
     <main>
       <section class="container">
         <div class="reserv">
-          <h2 class="title">Быстрая бронь</h2>
+          <h2 class="title" id="reserv">Быстрая бронь</h2>
           <input type="text" class="reserv-town" />
           <input type="text" class="reserv-category" />
-          <input type="date" name="date" class="check-in-date" />
+          <input type="text" name="date" class="check-in-date" />
           <input type="number" name="namber-night" class="namber-night" />
           <input type="number" name="namber-guests" class="namber-guests" />
           <button class="reserv-button gold">Найти номер</button>
@@ -53,17 +76,26 @@
           <span class="reserv-namber text">предложений доступно</span>
         </div>
         <div class="Special-offer">
-          <h2 class="title">Спецпредложение</h2>
-          <strong class="special-offer-banner"> Номера категории люкс </strong>
-          <p class="special-offer-price">от 5000 р</p>
-          <a href="" class="special-offer-link gold text">Подробнее</a>
+          <h2 class="title" id="Special-offer">Спецпредложения</h2>
+          <article>
+            <h3 class="special-offer-banner">Номера категории люкс</h3>
+            <span class="special-offer-price">от 5000 р</span>
+            <a href="" class="special-offer-link gold text">Подробнее</a>
+          </article>
         </div>
       </section>
 
       <section class="container">
         <h2 class="title" id="About-Us">О нас</h2>
         <p class="About-Us text">
-          Идейные соображения высшего порядка, а также сложившаяся структура организации влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным образом сложившаяся структура организации требуют определения и уточнения существенных финансовых и административных условий.
+          Идейные соображения высшего порядка, а также сложившаяся структура
+          организации влечет за собой процесс внедрения и модернизации системы
+          обучения кадров, соответствует насущным потребностям. Идейные
+          соображения высшего порядка, а также дальнейшее развитие различных
+          форм деятельности представляет собой интересный эксперимент проверки
+          системы обучения кадров, соответствует насущным потребностям. Равным
+          образом сложившаяся структура организации требуют определения и
+          уточнения существенных финансовых и административных условий.
         </p>
       </section>
 
@@ -72,32 +104,40 @@
           <h2 class="title" id="services">Услуги</h2>
           <ul class="service-list">
             <li class="service-item">
-              <a href="" class="service-item-exclusive gold">
-                Эксклюзивное обслуживание >
-              </a>
-              <br>
-              <span class="service-item-detail text">Равным образом постоянный количественный рост и сфера нашей активности</span>
+              <h3 class="service-item-exclusive gold">
+                Эксклюзивное обслуживание
+              </h3>
+              <p class="service-item-detail text">
+                Равным образом постоянный количественный рост и сфера нашей
+                активности
+              </p>
             </li>
             <li class="service-item">
-              <a href="" class="service-item-banquet-hall gold">
-                Аренда баткетных залов >
-              </a>
-              <br>
-              <span class="service-item-detail text">Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм.</span>
+              <h3 class="service-item-banquet-hall gold">
+                Аренда банкетных залов
+              </h3>
+              <p class="service-item-detail text">
+                Значимость этих проблем настолько очевидна, что дальнейшее
+                развитие различных форм.
+              </p>
             </li>
             <li class="service-item">
-              <a href="" class="service-item-sauna gold">
-                Сауны, бассейны, бани, фитнес-залы >
-              </a>
-              <br>
-              <span class="service-item-detail text">Не следует, однако забывать, что начало повседневной работы по формированию позиции</span>
+              <h3 class="service-item-sauna gold">
+                Сауны, бассейны, бани, фитнес-залы
+              </h3>
+              <p class="service-item-detail text">
+                Не следует, однако забывать, что начало повседневной работы по
+                формированию позиции
+              </p>
             </li>
             <li class="service-item">
-              <a href="" class="service-item-parking gold">
-                Охраняемые автомобильные стоянки >
-              </a>
-              <br>
-              <span class="service-item-detail text">Не следует, однако забывать, что начало повседневной работы по формированию позиции</span>
+              <h3 class="service-item-parking gold">
+                Охраняемые автомобильные стоянки
+              </h3>
+              <p class="service-item-detail text">
+                Не следует, однако забывать, что начало повседневной работы по
+                формированию позиции
+              </p>
             </li>
           </ul>
         </div>
@@ -105,226 +145,344 @@
 
       <section class="container">
         <div class="plus">
-        <h2 class="title" id="plus">
-          Преимущества
-        </h2>
-        <ul class="plus-list">
-          <li class="plus-item bathtub">
-            Идейные соображения высшего порядка, а также постоянный количественный рост
-          </li>
-          <li class="plus-item hanger">
-            Значимость этих проблем настолько очевидна, что вопрос остается открытым
-          </li>
-          <li class="plus-item heating">
-            Таким образом реализация плановых заданий играет важную роль для понимания
-          </li>
-          <li class="plus-item hotel-key">
-            Повседневная практика показывает, что сложившаяся структура организации
-          </li>
-          <li class="plus-item parking">
-            Равным образом рамки и место обучения кадров способствует подготовки сотрудника
-          </li>
-          <li class="plus-item reception">
-            Консультация с активом влечет за собой процесс внедрения услуг нашего сервиса 
-          </li>
-          <li class="plus-item securiti-box">
-            Повседневная практика показывает, что дальнейшее развитие различных форм
-          </li>
-          <li class="plus-item swimming-pool">
-            Значимость этого настолько очевидна, что консультация наших экспертов помогает
-          </li>
-        </ul>
-      </div>
+          <h2 class="title" id="plus">Преимущества</h2>
+          <ul class="plus-list">
+            <li class="plus-item bathtub">
+              Идейные соображения высшего порядка, а также постоянный
+              количественный рост
+            </li>
+            <li class="plus-item hanger">
+              Значимость этих проблем настолько очевидна, что вопрос остается
+              открытым
+            </li>
+            <li class="plus-item heating">
+              Таким образом реализация плановых заданий играет важную роль для
+              понимания
+            </li>
+            <li class="plus-item hotel-key">
+              Повседневная практика показывает, что сложившаяся структура
+              организации
+            </li>
+            <li class="plus-item parking">
+              Равным образом рамки и место обучения кадров способствует
+              подготовки сотрудника
+            </li>
+            <li class="plus-item reception">
+              Консультация с активом влечет за собой процесс внедрения услуг
+              нашего сервиса
+            </li>
+            <li class="plus-item securiti-box">
+              Повседневная практика показывает, что дальнейшее развитие
+              различных форм
+            </li>
+            <li class="plus-item swimming-pool">
+              Значимость этого настолько очевидна, что консультация наших
+              экспертов помогает
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="container">
         <div class="placing">
-          <h2 class="title" id="placing">
-            Размещение
-          </h2>
+          <h2 class="title" id="placing">Размещение</h2>
           <ul class="placing-list">
             <li class="placing-item">
-              <img class="placing-img" src="/img/placement/23.jpg" alt="Lagoona española. Барселона, Испания">
+              <img
+                class="placing-img"
+                src="/img/placement/23.jpg"
+                alt="Lagoona española. Барселона, Испания"
+              />
               <div class="placing-info-stars">
                 <span class="placing-info">
-                от <strong class="placing-price">4 698 р</strong>/ночь
-              </span>
-              <span class="placing-stars">
-                <img src="/img/icon/star.png" alt="Рейтинг 4 из 5">
-                <img src="/img/icon/star.png" alt="">
-                <img src="/img/icon/star.png" alt="">
-                <img src="/img/icon/star.png" alt="">
-                <img src="/img/icon/star1.png" alt="">
-              </span>
+                  от <strong class="placing-price">4 698 р</strong>/ночь
+                </span>
+                <span class="placing-stars">
+                  <img src="/img/icon/star.png" alt="Рейтинг 4 из 5" />
+                  <img src="/img/icon/star.png" alt="" />
+                  <img src="/img/icon/star.png" alt="" />
+                  <img src="/img/icon/star.png" alt="" />
+                  <img src="/img/icon/star1.png" alt="" />
+                </span>
               </div>
-              <div class="placing-name">
-                Lagoona española
-              </div>
-              <div class="placing-location">
-                Барселона, Испания
-              </div>
-              <a href="" class="placing-rooms">Номера</a>                    
+              <div class="placing-name">Lagoona española</div>
+              <div class="placing-location">Барселона, Испания</div>
+              <a href="" class="placing-rooms">Номера</a>
             </li>
             <li class="placing-item">
-              <img class="placing-img" src="/img/placement/24.jpg" alt="Lagoona son típicas Барселона, Испания">
+              <img
+                class="placing-img"
+                src="/img/placement/24.jpg"
+                alt="Lagoona son típicas Барселона, Испания"
+              />
               <div class="placing-info-stars">
                 <span class="placing-info">
-                от <strong class="placing-price">5 148 р</strong>/ночь
-              </span>
-              <span class="placing-stars">
-                <img src="/img/icon/star.png" alt="Рейтинг 4 из 5">
-                <img src="/img/icon/star.png" alt="">
-                <img src="/img/icon/star.png" alt="">
-                <img src="/img/icon/star.png" alt="">
-                <img src="/img/icon/star1.png" alt="">
-              </span>
+                  от <strong class="placing-price">5 148 р</strong>/ночь
+                </span>
+                <span class="placing-stars">
+                  <img src="/img/icon/star.png" alt="Рейтинг 4 из 5" />
+                  <img src="/img/icon/star.png" alt="" />
+                  <img src="/img/icon/star.png" alt="" />
+                  <img src="/img/icon/star.png" alt="" />
+                  <img src="/img/icon/star1.png" alt="" />
+                </span>
               </div>
-              <div class="placing-name">
-                Lagoona son típicas
-              </div>
-              <div class="placing-location">
-                Барселона, Испания
-              </div>
-              <a href="" class="placing-rooms">Номера</a>                    
+              <div class="placing-name">Lagoona son típicas</div>
+              <div class="placing-location">Барселона, Испания</div>
+              <a href="" class="placing-rooms">Номера</a>
             </li>
             <li class="placing-item">
-              <img class="placing-img" src="/img/placement/26.jpg" alt="Lagoona de la guerra Барселона, Испания">
+              <img
+                class="placing-img"
+                src="/img/placement/26.jpg"
+                alt="Lagoona de la guerra Барселона, Испания"
+              />
               <div class="placing-info-stars">
                 <span class="placing-info">
-                от <strong class="placing-price">6 254 р</strong>/ночь
-              </span>
-              <span class="placing-stars">
-                <img src="/img/icon/star.png" alt="Рейтинг 5 из 5">
-                <img src="/img/icon/star.png" alt="">
-                <img src="/img/icon/star.png" alt="">
-                <img src="/img/icon/star.png" alt="">
-                <img src="/img/icon/star.png" alt="">
-              </span>
+                  от <strong class="placing-price">6 254 р</strong>/ночь
+                </span>
+                <span class="placing-stars">
+                  <img src="/img/icon/star.png" alt="Рейтинг 5 из 5" />
+                  <img src="/img/icon/star.png" alt="" />
+                  <img src="/img/icon/star.png" alt="" />
+                  <img src="/img/icon/star.png" alt="" />
+                  <img src="/img/icon/star.png" alt="" />
+                </span>
               </div>
-              <div class="placing-name">
-                Lagoona de la guerra
-              </div>
-              <div class="placing-location">
-                Барселона, Испания
-              </div>
-              <a href="" class="placing-rooms">Номера</a>                    
+              <div class="placing-name">Lagoona de la guerra</div>
+              <div class="placing-location">Барселона, Испания</div>
+              <a href="" class="placing-rooms">Номера</a>
             </li>
             <li class="placing-item">
-              <img class="placing-img" src="/img/placement/27.jpg" alt="Lagoona mentira piadosa Барселона, Испания">
+              <img
+                class="placing-img"
+                src="/img/placement/27.jpg"
+                alt="Lagoona mentira piadosa Барселона, Испания"
+              />
               <div class="placing-info-stars">
                 <span class="placing-info">
-                от <strong class="placing-price">6 320 р</strong>/ночь
-              </span>
-              <span class="placing-stars">
-                <img src="/img/icon/star.png" alt="Рейтинг 5 из 5">
-                <img src="/img/icon/star.png" alt="">
-                <img src="/img/icon/star.png" alt="">
-                <img src="/img/icon/star.png" alt="">
-                <img src="/img/icon/star.png" alt="">
-              </span>
+                  от <strong class="placing-price">6 320 р</strong>/ночь
+                </span>
+                <span class="placing-stars">
+                  <img src="/img/icon/star.png" alt="Рейтинг 5 из 5" />
+                  <img src="/img/icon/star.png" alt="" />
+                  <img src="/img/icon/star.png" alt="" />
+                  <img src="/img/icon/star.png" alt="" />
+                  <img src="/img/icon/star.png" alt="" />
+                </span>
               </div>
-              <div class="placing-name">
-                Lagoona mentira piadosa
-              </div>
-              <div class="placing-location">
-                Барселона, Испания
-              </div>
-              <a href="" class="placing-rooms">Номера</a>                    
+              <div class="placing-name">Lagoona mentira piadosa</div>
+              <div class="placing-location">Барселона, Испания</div>
+              <a href="" class="placing-rooms">Номера</a>
             </li>
             <li class="placing-item">
-              <img class="placing-img" src="/img/placement/28.jpg" alt="Lagoona empujar la creatividad Барселона, Испания">
+              <img
+                class="placing-img"
+                src="/img/placement/28.jpg"
+                alt="Lagoona empujar la creatividad Барселона, Испания"
+              />
               <div class="placing-info-stars">
                 <span class="placing-info">
-                от <strong class="placing-price">6 457 р</strong>/ночь
-              </span>
-              <span class="placing-stars">
-                <img src="/img/icon/star.png" alt="Рейтинг 4 из 5">
-                <img src="/img/icon/star.png" alt="">
-                <img src="/img/icon/star.png" alt="">
-                <img src="/img/icon/star.png" alt="">
-                <img src="/img/icon/star1.png" alt="">
-              </span>
+                  от <strong class="placing-price">6 457 р</strong>/ночь
+                </span>
+                <span class="placing-stars">
+                  <img src="/img/icon/star.png" alt="Рейтинг 4 из 5" />
+                  <img src="/img/icon/star.png" alt="" />
+                  <img src="/img/icon/star.png" alt="" />
+                  <img src="/img/icon/star.png" alt="" />
+                  <img src="/img/icon/star1.png" alt="" />
+                </span>
               </div>
-              <div class="placing-name">
-                Lagoona empujar la creatividad
-              </div>
-              <div class="placing-location">
-                Барселона, Испания
-              </div>
-              <a href="" class="placing-rooms">Номера</a>                    
+              <div class="placing-name">Lagoona empujar la creatividad</div>
+              <div class="placing-location">Барселона, Испания</div>
+              <a href="" class="placing-rooms">Номера</a>
             </li>
             <li class="placing-item">
-              <img class="placing-img" src="/img/placement/29.jpg" alt="Lagoona el retorno Барселона, Испания">
+              <img
+                class="placing-img"
+                src="/img/placement/29.jpg"
+                alt="Lagoona el retorno Барселона, Испания"
+              />
               <div class="placing-info-stars">
                 <span class="placing-info">
-                от <strong class="placing-price">6 490 р</strong>/ночь
-              </span>
-              <span class="placing-stars">
-                <img src="/img/icon/star.png" alt="Рейтинг 4 из 5">
-                <img src="/img/icon/star.png" alt="">
-                <img src="/img/icon/star.png" alt="">
-                <img src="/img/icon/star.png" alt="">
-                <img src="/img/icon/star1.png" alt="">
-              </span>
+                  от <strong class="placing-price">6 490 р</strong>/ночь
+                </span>
+                <span class="placing-stars">
+                  <img src="/img/icon/star.png" alt="Рейтинг 4 из 5" />
+                  <img src="/img/icon/star.png" alt="" />
+                  <img src="/img/icon/star.png" alt="" />
+                  <img src="/img/icon/star.png" alt="" />
+                  <img src="/img/icon/star1.png" alt="" />
+                </span>
               </div>
-              <div class="placing-name">
-                Lagoona el retorno
-              </div>
-              <div class="placing-location">
-                Барселона, Испания
-              </div>
-              <a href="" class="placing-rooms">Номера</a>                    
+              <div class="placing-name">Lagoona el retorno</div>
+              <div class="placing-location">Барселона, Испания</div>
+              <a href="" class="placing-rooms">Номера</a>
             </li>
             <li class="placing-item">
-              <img class="placing-img" src="/img/placement/30.jpg" alt="Lagoona enfermo terminó Барселона, Испания">
+              <img
+                class="placing-img"
+                src="/img/placement/30.jpg"
+                alt="Lagoona enfermo terminó Барселона, Испания"
+              />
               <div class="placing-info-stars">
                 <span class="placing-info">
-                от <strong class="placing-price">6 505 р</strong>/ночь
-              </span>
-              <span class="placing-stars">
-                <img src="/img/icon/star.png" alt="Рейтинг 5 из 5">
-                <img src="/img/icon/star.png" alt="">
-                <img src="/img/icon/star.png" alt="">
-                <img src="/img/icon/star.png" alt="">
-                <img src="/img/icon/star.png" alt="">
-              </span>
+                  от <strong class="placing-price">6 505 р</strong>/ночь
+                </span>
+                <span class="placing-stars">
+                  <img src="/img/icon/star.png" alt="Рейтинг 5 из 5" />
+                  <img src="/img/icon/star.png" alt="" />
+                  <img src="/img/icon/star.png" alt="" />
+                  <img src="/img/icon/star.png" alt="" />
+                  <img src="/img/icon/star.png" alt="" />
+                </span>
               </div>
-              <div class="placing-name">
-                Lagoona enfermo terminó
-              </div>
-              <div class="placing-location">
-                Барселона, Испания
-              </div>
-              <a href="" class="placing-rooms">Номера</a>                    
+              <div class="placing-name">Lagoona enfermo terminó</div>
+              <div class="placing-location">Барселона, Испания</div>
+              <a href="" class="placing-rooms">Номера</a>
             </li>
             <li class="placing-item">
-              <img class="placing-img" src="/img/placement/31.jpg" alt="Lagoona suerte siguió siempre Барселона, Испания">
+              <img
+                class="placing-img"
+                src="/img/placement/31.jpg"
+                alt="Lagoona suerte siguió siempre Барселона, Испания"
+              />
               <div class="placing-info-stars">
                 <span class="placing-info">
-                от <strong class="placing-price">6 824 р</strong>/ночь
-              </span>
-              <span class="placing-stars">
-                <img src="/img/icon/star.png" alt="Рейтинг 4 из 5">
-                <img src="/img/icon/star.png" alt="">
-                <img src="/img/icon/star.png" alt="">
-                <img src="/img/icon/star.png" alt="">
-                <img src="/img/icon/star1.png" alt="">
-              </span>
+                  от <strong class="placing-price">6 824 р</strong>/ночь
+                </span>
+                <span class="placing-stars">
+                  <img src="/img/icon/star.png" alt="Рейтинг 4 из 5" />
+                  <img src="/img/icon/star.png" alt="" />
+                  <img src="/img/icon/star.png" alt="" />
+                  <img src="/img/icon/star.png" alt="" />
+                  <img src="/img/icon/star1.png" alt="" />
+                </span>
               </div>
-              <div class="placing-name">
-                Lagoona suerte siguió siempre
-              </div>
-              <div class="placing-location">
-                Барселона, Испания
-              </div>
-              <a href="" class="placing-rooms">Номера</a>                    
+              <div class="placing-name">Lagoona suerte siguió siempre</div>
+              <div class="placing-location">Барселона, Испания</div>
+              <a href="" class="placing-rooms">Номера</a>
             </li>
-            <li class="placing-item placing-other">              
-              <a href="" class="placing-other-rooms">Посмотреть все варианты ></a>                    
-            </li>            
+            <li class="placing-item placing-other">
+              <a href="" class="placing-other-rooms">Посмотреть все варианты</a>
+            </li>
           </ul>
         </div>
-      </section>      
+      </section>
+
+      <section class="container">
+        <h2 class="title" id="blog">Блог</h2>
+        <div class="blog">
+          <div class="blog-chosen">
+            <div class="blog-chosen-img-link">
+              <img
+                src="/img/blog/44.jpg"
+                alt="grand-hotel"
+                class="blog-chosen-img"
+              />
+              <a href="" class="blog-chosen-link underline">grand-hotel.ru</a>
+            </div>
+            <div class="blog-chosen-text">
+              <h3 class="blog-chosen-text-head gold">
+                Увидев какой-то предмет, начни...
+              </h3>
+              <p class="blog-chosen-text-paragraf">
+                Равным образом рамки и место обучения кадров способствует
+                подготовки сотрудника
+              </p>
+              <div class="blog-chosen-text-info">
+                <span class="blog-chosen-text-eye">256</span>
+                <span class="blog-chosen-text-date">28 июня</span>
+              </div>
+            </div>
+          </div>
+          <div class="blog-more">
+            <ul class="blog-more-list">
+              <li class="blog-more-item">
+                <div class="blog-more-img-link">
+                  <img
+                    src="/img/blog/45.jpg"
+                    alt="surff"
+                    class="blog-more-img"
+                  />
+                  <a href="" class="blog-more-link underline">surff.ru</a>
+                </div>
+                <div class="blog-more-text">
+                  <p class="blog-more-text-paragraf">
+                    Для начала не смыкай глаза как минимум минут десять, а
+                    затем...
+                  </p>
+                  <div class="blog-more-text-info">
+                    <span class="blog-more-text-eye">320</span>
+                    <span class="blog-more-text-date">27 июня</span>
+                  </div>
+                </div>
+              </li>
+              <li class="blog-more-item">
+                <div class="blog-more-img-link">
+                  <img
+                    src="/img/blog/46.jpg"
+                    alt="goodservice"
+                    class="blog-more-img"
+                  />
+                  <a href="" class="blog-more-link underline"
+                    >goodservice.org</a
+                  >
+                </div>
+                <div class="blog-more-text">
+                  <p class="blog-more-text-paragraf">
+                    Следующий игрок по сигналу продолжает ее, а потом ведущий...
+                  </p>
+                  <div class="blog-more-text-info">
+                    <span class="blog-more-text-eye">290</span>
+                    <span class="blog-more-text-date">25 июня</span>
+                  </div>
+                </div>
+              </li>
+              <li class="blog-more-item">
+                <div class="blog-more-img-link">
+                  <img
+                    src="/img/blog/47.jpg"
+                    alt="normanstanley"
+                    class="blog-more-img"
+                  />
+                  <a href="" class="blog-more-link underline"
+                    >normanstanley.com</a
+                  >
+                </div>
+                <div class="blog-more-text">
+                  <p class="blog-more-text-paragraf">
+                    Теперь выключи телевизор и продолжай говорить за ним...
+                  </p>
+                  <div class="blog-more-text-info">
+                    <span class="blog-more-text-eye">364</span>
+                    <span class="blog-more-text-date">24 июня</span>
+                  </div>
+                </div>
+              </li>
+              <li class="blog-more-item">
+                <div class="blog-more-img-link">
+                  <img
+                    src="/img/blog/48.jpg"
+                    alt="wikireading"
+                    class="blog-more-img"
+                  />
+                  <a href="" class="blog-more-link underline">wikireading.ru</a>
+                </div>
+                <div class="blog-more-text">
+                  <p class="blog-more-text-paragraf">
+                    Теперь выключи телевизор и продолжай говорить за ним...
+                  </p>
+                  <div class="blog-more-text-info">
+                    <span class="blog-more-text-eye">403</span>
+                    <span class="blog-more-text-date">23 июня</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
-  </body>  
+  </body>
 </html>
