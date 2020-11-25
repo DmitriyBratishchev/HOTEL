@@ -1,4 +1,30 @@
+@font-face {
+  font-family: 'MullerBold';
+  src: local('MullerBold'),
+    url('../fonts/MullerBold.woff2') format('woff2')
+    url('../fonts/MullerBold.woff') format('woff')
+}
 
+@font-face {
+  font-family: 'MullerLight';
+  src: local('MullerLight'),
+    url('../fonts/MullerLight.woff2') format('woff2')
+    url('../fonts/MullerLight.woff') format('woff')
+}
+
+@font-face {
+  font-family: 'MullerMedium';
+  src: local('MullerMedium'),
+    url('../fonts/MullerMedium.woff2') format('woff2')
+    url('../fonts/MullerMedium.woff') format('woff')
+}
+
+@font-face {
+  font-family: 'MullerRegular';
+  src: local('MullerRegular'),
+    url('../fonts/MullerRegular.woff2') format('woff2')
+    url('../fonts/MullerRegular.woff') format('woff')
+}
 
 * {
   box-sizing: border-box;
@@ -15,13 +41,18 @@ a {
   text-decoration: none;
 }
 
-
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: 'MullerRegular';
+}
 
 .body {
+  font-family: 'MullerRegular', sans-serif;
   background-color: #f1f1f1;
   visibility: -5;
-  font-family: sans-serif;
-  color: #323232;
 }
 
 
@@ -31,12 +62,17 @@ a {
   max-width: 1170px;
 }
 
-.gold {
-  color: #cc9933
-}
-
 .title {
   font-size: 40px;
+  color: #333;
+}
+
+.text {
+  color: #666;
+}
+
+.gold {
+  color: #cc9933
 }
 
 
@@ -49,8 +85,9 @@ a {
 }
 
 .header-tel{
+  font-family: 'MullerBold';
   margin: auto auto auto 25px;
-  color: #323232;
+  color: #666;
   font-size: 22px;
 }
 
@@ -95,7 +132,7 @@ a {
 }
 
 .nav-link {
-  color: #323232;
+  color: #333;
 }
 
 .scan {
@@ -164,7 +201,7 @@ a {
 }
 
 #special-offer {
-  margin-left: 45px;
+  margin-left: 40px;
 }
 
 .special-offer-img {
@@ -175,6 +212,7 @@ a {
 }
 
 .special-offer-banner {
+  font-family: 'MullerBold';
   line-height: 58px;
   width: min-content;
   margin: 260px auto auto 50px;
@@ -252,6 +290,7 @@ a {
 .service-item-sauna,
 .service-item-parking {
   display: inline-block;
+  font-family: 'MullerMedium';
   font-size: 22px;
   margin: 200px auto 19px 40px;
   margin-top: 200px;
@@ -352,9 +391,12 @@ a {
   position: relative;
 }
 
+.placing-img {
+  border-radius: 12px 12px 0 0;
+}
+
 .placing-info-stars {
   display: block;
-
   margin-left: 40px;
   margin-right: 40px;
   margin: 30px 40px auto;
@@ -362,6 +404,7 @@ a {
 }
 
 .placing-price {
+  color: #333;
   font-size: 22px;
 }
 
@@ -370,11 +413,12 @@ a {
 }
 
 .placing-name {
+  color: #333;
   margin-top: 20px;
 }
 
 .placing-location {
-  margin-bottom: 81px;
+  margin-bottom: 101px;
 }
 
 .placing-rooms {
@@ -383,7 +427,7 @@ a {
   height: 41px;
   line-height: 41px;
   text-align: center;
-  margin: 20px 0;
+  margin: 20px 0 40px;
   color: #cc9933;
   border: 1px solid #cc9933;
   border-radius: 12px;
@@ -394,7 +438,6 @@ a {
 .placing-other {
   background: url(../img/placement/41.jpg) no-repeat;
   background-size: cover;
-
 }
 
 .placing-other-rooms {
