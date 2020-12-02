@@ -56,19 +56,21 @@
 
     <main>
       <div class="container hot-deal">
-        <section class="reserv">
-          <h2 class="title" id="reserv">Быстрая бронь</h2>
-          <input type="text" class="reserv-town" placeholder="Город" />
-          <input type="text" class="reserv-category" placeholder="Категория номера"/>
-          <input type="text" name="date" class="check-in-date" placeholder="Дата заселения" />
-          <input type="number" name="namber-night" class="namber-night" placeholder="Количество ночей" />
-          <input type="number" name="namber-guests" class="namber-guests" placeholder="Количество гостей" />
-          <div class="reserv-info">
-            <button class="reserv-button gold">Найти номер</button>
-            <span class="reserv-namber gold">9 756</span>
-            <span class="reserv-namber text">предложений доступно</span>
-          </div>
-        </section>
+        <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="reserv-form">
+          <section class="reserv">
+            <h2 class="title" id="reserv">Быстрая бронь</h2>
+            <input type="text" name="town" class="reserv-town" placeholder="Город" />
+            <input type="text" name="room-category" class="reserv-category" placeholder="Категория номера"/>
+            <input type="date" name="date" class="check-in-date" placeholder="Дата заселения" />
+            <input type="number" name="namber-night" class="namber-night" placeholder="Количество ночей" />
+            <input type="number" name="namber-guests" class="namber-guests" placeholder="Количество гостей" />
+            <div class="reserv-info">
+              <button type="submit" class="reserv-button gold">Найти номер</button>
+              <span class="reserv-namber gold">9 756</span>
+              <span class="reserv-namber text">предложений доступно</span>
+            </div>
+          </section>
+        </form>
         <section class="special-offer">
           <h2 class="title" id="special-offer">Спецпредложение</h2>
           <article class="special-offer-img">
@@ -376,6 +378,48 @@
               <a href="" class="placing-other-rooms">Посмотреть все варианты</a>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="contacts">
+          <table align="left" class="contacts-table">
+            <caption class="title" id="contacts">Контакты</caption>
+            <tr class="contacts-item">
+              <td class="contacts-item-parameter">
+                <b class="contacts-item-parameter">Адрес</b>
+              </td>
+              <td>
+                <span class="contacts-item-value ">Москва, улица Юности, дом 5 строение 4, офис 2</span>
+              </td>
+            </tr>
+            <tr class="contacts-item">
+              <td class="contacts-item-parameter"><b class="contacts-item-parameter">Телефоны</b></td>
+              <td>
+                <span class="contacts-item-value">
+                  <a class="gold" href="tel:+74995356434">+7(499)535-64-34</a>
+                  <a class="gold" href="tel:+74990050544">+7(499)005-05-44</a>
+                </span>
+              </td>
+            </tr>
+            <tr class="contacts-item">
+              <td class="contacts-item-parameter">
+                <b class="contacts-item-parameter">E-mail</b>
+              </td>
+              <td>
+                <span class="contacts-item-value">
+                  <span><a class="gold" href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a> по вопросам бронирования</span>
+                  <span><a class="gold" href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a> по вопросам сотрудничества</span>
+                </span>
+              </td>
+            </tr>
+            <tr class="contacts-item">
+              <td class="contacts-item-parameter">
+                <b class="contacts-item-parameter">График</b>
+              </td>
+              <td><span class="contacts-item-value">Понедельник - пятница, с 10:00 до 19:00</span></td>
+            </tr>
+          </table>
         </div>
       </section>
 

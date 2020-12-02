@@ -66,7 +66,7 @@ textarea {
 .container{
   margin-left: auto;
   margin-right: auto;
-  max-width: 1170px;
+  max-width: 1168px;
 }
 
 .title {
@@ -180,11 +180,21 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex: 1 1;
+  flex: 2 0;
+}
+
+.reserv-form {
+  /* display: block; */
+  /* margin-right: 55px; */
+  display: flex;
+  margin-right: auto;
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+  flex: 10 1;
 }
 
 .reserv input {
-  padding: 0 0 0 21px;
+  padding: 0 0 0 20px;
   height: 70px;
   margin-bottom: 24px;
   border: none;
@@ -193,7 +203,7 @@ textarea {
 
 .reserv-button {
   height: 70px;
-  width: 160px;
+  width: 159px;
   font-size: 16px;
   border: none;
   background-color: #cc9933;
@@ -216,6 +226,8 @@ textarea {
 /* Спецпредложение */
 .Special-offer {
   min-width: 595px;
+  margin-right: 0;
+  margin-left: auto;
 }
 
 #special-offer {
@@ -511,4 +523,20 @@ textarea {
   transform: translateY(3px);
 }
 
+
+
+#contacts {
+  margin: 40px auto 0px 40px;
+  text-align: left;
+}
+
+.contacts-table {
+  background-color: white;
+  width: 472px;
+  /* align: left; */
+}
+
+.contacts-item-parameter {
+  width: 170px;
+}
 
