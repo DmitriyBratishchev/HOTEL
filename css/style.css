@@ -151,7 +151,7 @@ textarea {
 .scan {
   height: 48px;
   width: 355px;
-  font-size: 12px;
+  font-size: 14px;
   border: none;
   border-radius: 15px;
   background: url(../img/search.png) no-repeat center;
@@ -176,21 +176,12 @@ textarea {
 }
 
 .reserv {
-  margin-right: 55px;
+  margin-right: 53px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex: 2 0;
-}
-
-.reserv-form {
-  /* display: block; */
-  /* margin-right: 55px; */
-  display: flex;
-  margin-right: auto;
-  /* flex-direction: column; */
-  /* justify-content: space-between; */
-  flex: 10 1;
+  width: 100%;
+  max-width: 520px;
 }
 
 .reserv input {
@@ -225,19 +216,19 @@ textarea {
 
 /* Спецпредложение */
 .Special-offer {
-  min-width: 595px;
-  margin-right: 0;
-  margin-left: auto;
+  display: flex; 
 }
 
 #special-offer {
+  display: inline-block;
   margin-left: 42px;
   margin-bottom: 20px;
 }
 
 .special-offer-img {
   display: inline-block;
-  width: 595px;
+  width: 100%;
+  max-width: 595px;
   min-height: 540px;
   border-radius: 12px;
   background: url(../img/22.jpg) no-repeat center;
@@ -301,7 +292,7 @@ textarea {
 }
 
 .service-item {
-  width: calc((100% - 26px) / 2);
+  width: calc((100% - 24px) / 2);
   max-width: 572px;
   min-height: 325px;
   border-radius: 12px;
@@ -410,7 +401,7 @@ textarea {
 }
 
 .plus-item {
-  width: calc((100% - 70px) / 4);
+  width: calc((100% - 68px) / 4);
   min-height: 275px;
   margin-bottom: 22px;
   background-color: #fff;
@@ -441,7 +432,8 @@ textarea {
 
 .placing-item {
   display: inline-block;
-  width: 373px;
+  width: calc((100% - 49px) / 3);
+  max-width: 373px;
   min-height: 441px;
   border-radius: 12px;
   background-color: #fff;
@@ -450,12 +442,13 @@ textarea {
 }
 
 .placing-img {
+  width: 100%;
   border-radius: 12px 12px 0 0;
 }
 
 .placing-info-stars {
   margin-left: 45px;
-  margin-right: 45px;
+  margin-right: 43px;
   margin-top: 30px;
   font-size: 16px;
 }
@@ -469,8 +462,9 @@ textarea {
 .placing-stars {
   display: flex;
   justify-content: space-between;
-  width: 100px;
+  width: 96px;
   float: right;
+  transform: translateY(5px);
 }
 
 .placing-name {
