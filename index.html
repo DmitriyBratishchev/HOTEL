@@ -48,7 +48,10 @@
                 <a href="#contacts" class="nav-link">Контакты</a>
               </li>
             </ul>
-          <input type="text" class="scan" placeholder="Поиск"/>
+          <form class="scan" action="https://jsonplaceholder.typicode.com/posts" method="post">
+            <input type="text" name="search" class="scan-text" placeholder="Поиск"/>
+            <button class="scan-btn" type="submit"></button>
+          </form>
           </nav>
         </div>
       </div>
