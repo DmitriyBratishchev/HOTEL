@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Отели</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="/css/normalize.css" />
+    <link type="text/css" rel="stylesheet" href="/css/style.css" />
   </head>
   <body class="body">
 
@@ -408,17 +408,17 @@
               <b class="contacts-item-parameter">График</b>
               <span class="contacts-item-value">Понедельник - пятница,<br>с 10:00 до 19:00</span>
             </li>
-            <!-- <li class="contacts-item"> -->
+            <li>
               <button class="btn contacts-item-btn gold">Построить маршрут</button>
-            <!-- </li> -->
+            </li>
           </ul>
         </div>
         <div class="write_us">
           <h2 class="write_us-header title">Напишите нам</h2>
           <form class="write_us-form" action="https://jsonplaceholder.typicode.com/posts" method="post">
-            <input type="text" name="name" id="" placeholder="Имя" class="write_us-form-name">
-            <input type="tel" name="tel" id="" placeholder="+7" class="write_us-form-tel">
-            <textarea name="message" id="" cols="30" rows="3" placeholder="Сообщение..." class="write_us-form-message"></textarea>
+            <input type="text" name="name" placeholder="Имя" class="write_us-form-name">
+            <input type="tel" name="tel" placeholder="+7" class="write_us-form-tel">
+            <textarea name="message" cols="30" rows="3" placeholder="Сообщение..." class="write_us-form-message"></textarea>
             <button class="btn write_us-btn" type="submit">Отправить</button>
           </form>
         </div>
@@ -427,7 +427,7 @@
     </main>
 
     <footer class="footer container">
-      <ul class="footer-list">
+      <div class="footer-list">
         <ul class="footer-list-info">
           <li class="footer-list-info-item">
             <span class="footer-list-info-item-text white"><span class="fa-copyright"></span>2012-2020 Управляющая компания<br>Объединенной сети <span class="fa-angle-double-left"></span>Лагуна Хотелс<span class="fa-angle-double-right"></span></span>
@@ -457,32 +457,31 @@
         <ul class="footer-list-messanger">
           <li class="footer-list-messanger-icon">
             <a href="" class="messanger-link">
-              <img src="./img/icon/tripadvisor111.svg" alt="" srcset="">
+              <img src="./img/icon/tripadvisor111.svg" alt="">
             </a>
           </li>
           <li class="footer-list-messanger-icon">
             <a href="" class="messanger-link">
-              <img src="./img/icon/twitter.svg" alt="" srcset="">
+              <img src="./img/icon/twitter.svg" alt="">
             </a>
           </li>
           <li class="footer-list-messanger-icon">
             <a href="" class="messanger-link">
-              <img src="./img/icon/facebook.svg" alt="" srcset="">
+              <img src="./img/icon/facebook.svg" alt="">
             </a>
           </li>
           <li class="footer-list-messanger-icon">
             <a href="" class="messanger-link">
-              <img src="./img/icon/vk.svg" alt="" srcset="">
+              <img src="./img/icon/vk.svg" alt="">
             </a>
           </li>
           <li class="footer-list-messanger-icon">
             <a href="#" class="messanger-link">
-              <img src="./img/icon/google-plus-social-logotype.svg" alt="" srcset="">
+              <img src="./img/icon/google-plus-social-logotype.svg" alt="">
             </a>
           </li>
-          
         </ul>
-      </ul>
+      </div>
     </footer>
   </body>
 </html>
