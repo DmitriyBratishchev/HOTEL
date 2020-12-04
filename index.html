@@ -56,19 +56,21 @@
 
     <main>
       <div class="container hot-deal">
-        <section class="reserv">
-          <h2 class="title" id="reserv">Быстрая бронь</h2>
-          <input type="text" class="reserv-town" placeholder="Город" />
-          <input type="text" class="reserv-category" placeholder="Категория номера"/>
-          <input type="text" name="date" class="check-in-date" placeholder="Дата заселения" />
-          <input type="number" name="namber-night" class="namber-night" placeholder="Количество ночей" />
-          <input type="number" name="namber-guests" class="namber-guests" placeholder="Количество гостей" />
-          <div class="reserv-info">
-            <button class="reserv-button gold">Найти номер</button>
-            <span class="reserv-namber gold">9 756</span>
-            <span class="reserv-namber text">предложений доступно</span>
-          </div>
-        </section>
+        <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="reserv-form">
+          <section class="reserv">
+            <h2 class="title" id="reserv">Быстрая бронь</h2>
+            <input type="text" name="town" class="reserv-town" placeholder="Город" />
+            <input type="text" name="room-category" class="reserv-category" placeholder="Категория номера"/>
+            <input type="text" name="date" class="check-in-date" placeholder="Дата заселения" />
+            <input type="number" name="namber-night" class="namber-night" placeholder="Количество ночей" />
+            <input type="number" name="namber-guests" class="namber-guests" placeholder="Количество гостей" />
+            <div class="reserv-info">
+              <button type="submit" class="reserv-button gold">Найти номер</button>
+              <span class="reserv-namber gold">9 756</span>
+              <span class="reserv-namber text">предложений доступно</span>
+            </div>
+          </section>
+        </form>
         <section class="special-offer">
           <h2 class="title" id="special-offer">Спецпредложение</h2>
           <article class="special-offer-img">
@@ -265,7 +267,7 @@
             <li class="placing-item">
               <img
                 class="placing-img"
-                src="/img/placement/27.jpg"
+                src="/img/placement/29.jpg"
                 alt="Lagoona mentira piadosa Барселона, Испания"
               />
               <div class="placing-info-stars text">
@@ -287,7 +289,7 @@
             <li class="placing-item">
               <img
                 class="placing-img"
-                src="/img/placement/28.jpg"
+                src="/img/placement/30.jpg"
                 alt="Lagoona empujar la creatividad Барселона, Испания"
               />
               <div class="placing-info-stars text">
@@ -309,7 +311,7 @@
             <li class="placing-item">
               <img
                 class="placing-img"
-                src="/img/placement/29.jpg"
+                src="/img/placement/31.jpg"
                 alt="Lagoona el retorno Барселона, Испания"
               />
               <div class="placing-info-stars text">
@@ -331,7 +333,7 @@
             <li class="placing-item">
               <img
                 class="placing-img"
-                src="/img/placement/30.jpg"
+                src="/img/placement/27.jpg"
                 alt="Lagoona enfermo terminó Барселона, Испания"
               />
               <div class="placing-info-stars text">
@@ -353,7 +355,7 @@
             <li class="placing-item">
               <img
                 class="placing-img"
-                src="/img/placement/31.jpg"
+                src="/img/placement/28.jpg"
                 alt="Lagoona suerte siguió siempre Барселона, Испания"
               />
               <div class="placing-info-stars text">
@@ -379,6 +381,108 @@
         </div>
       </section>
 
+      <section class="container contacts_and_write_us">
+        <div class="contacts">
+          <h2 class="title" id="contacts">Контакты</h2>
+          <ul class="contacts-table">
+            <li class="contacts-item">
+                <b class="contacts-item-parameter">Адрес</b>
+                <span class="contacts-item-value">Москва, улица Юности, дом 5 строение 4, офис 2</span>
+            </li>
+            <li class="contacts-item">
+              <b class="contacts-item-parameter">Телефоны</b>
+              <span class="contacts-item-value">
+                <a class="gold" href="tel:+74995356434">+7 (499) 535-64-34</a>
+                <br>
+                <a class="gold" href="tel:+74990050544">+7 (499) 005-05-44</a>
+              </span>
+            </li>
+            <li class="contacts-item">
+              <b class="contacts-item-parameter">E-mail</b>
+              <span class="contacts-item-value">
+                <span class="contacts-item-value-mail"><a class="gold" href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a> по вопросам бронирования</span>
+                <span class="contacts-item-value-mail"><a class="gold" href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a> по вопросам сотрудничества</span>
+              </span>
+            </li>
+            <li class="contacts-item">
+              <b class="contacts-item-parameter">График</b>
+              <span class="contacts-item-value">Понедельник - пятница,<br>с 10:00 до 19:00</span>
+            </li>
+            <!-- <li class="contacts-item"> -->
+              <button class="btn contacts-item-btn gold">Построить маршрут</button>
+            <!-- </li> -->
+          </ul>
+        </div>
+        <div class="write_us">
+          <h2 class="write_us-header title">Напишите нам</h2>
+          <form class="write_us-form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+            <input type="text" name="name" id="" placeholder="Имя" class="write_us-form-name">
+            <input type="tel" name="tel" id="" placeholder="+7" class="write_us-form-tel">
+            <textarea name="message" id="" cols="30" rows="3" placeholder="Сообщение..." class="write_us-form-message"></textarea>
+            <button class="btn write_us-btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
+
     </main>
+
+    <footer class="footer container">
+      <ul class="footer-list">
+        <ul class="footer-list-info">
+          <li class="footer-list-info-item">
+            <span class="footer-list-info-item-text white"><span class="fa-copyright"></span>2012-2020 Управляющая компания<br>Объединенной сети <span class="fa-angle-double-left"></span>Лагуна Хотелс<span class="fa-angle-double-right"></span></span>
+          </li>
+          <li class="footer-list-info-item">
+            <span class="footer-list-info-item-text white">Представленная на сайте информация<br>носит справочный характер<br>и не является публичной офертой</span>
+          </li>
+          <li class="footer-list-info-item">
+            <a href="" class="footer-list-info-item-text gold">Политика конфиденциальности</a>
+          </li>
+        </ul>
+        <ul class="footer-list-contacts">
+          <li class="footer-list-contacts-item">
+            <span class="footer-list-contacts-value white">11710, улица Юности, дом 5 строение 4, офис 2</span>
+          </li>
+          <li class="footer-list-contacts-item tel">
+            <a class="footer-list-contacts-item-tel gold" href="tel:+74995356434">+7 (499) 535-64-34</a>
+            <br>
+            <a class="gold" href="tel:+74990050544">+7 (495) 005-05-44</a>
+          </li>
+          <li class="footer-list-contacts-item">
+            <a class="gold" href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a>
+            <br>
+            <a class="gold" href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a>
+          </li>
+        </ul>
+        <ul class="footer-list-messanger">
+          <li class="footer-list-messanger-icon">
+            <a href="" class="messanger-link">
+              <img src="./img/icon/tripadvisor111.svg" alt="" srcset="">
+            </a>
+          </li>
+          <li class="footer-list-messanger-icon">
+            <a href="" class="messanger-link">
+              <img src="./img/icon/twitter.svg" alt="" srcset="">
+            </a>
+          </li>
+          <li class="footer-list-messanger-icon">
+            <a href="" class="messanger-link">
+              <img src="./img/icon/facebook.svg" alt="" srcset="">
+            </a>
+          </li>
+          <li class="footer-list-messanger-icon">
+            <a href="" class="messanger-link">
+              <img src="./img/icon/vk.svg" alt="" srcset="">
+            </a>
+          </li>
+          <li class="footer-list-messanger-icon">
+            <a href="#" class="messanger-link">
+              <img src="./img/icon/google-plus-social-logotype.svg" alt="" srcset="">
+            </a>
+          </li>
+          
+        </ul>
+      </ul>
+    </footer>
   </body>
 </html>
