@@ -64,6 +64,10 @@ input:focus {
   outline: none;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 ::placeholder {
   color: #999;
 }
@@ -165,18 +169,38 @@ input:focus {
 }
 
 .scan {
+  display: flex;
   height: 48px;
   width: 355px;
   font-size: 14px;
   border: none;
   border-radius: 15px;
-  background: url(../img/search.png) no-repeat center;
+  /* background: url(../img/search.png) no-repeat center; */
   background-color: #f1f1f1;
-  background-position: 93%;
-  padding-right: 40px;
+  /* background-position: 93%; */
+  padding-right: 18px;
   padding-left: 20px;
   margin: auto 20px auto auto;
 }
+
+.scan-text,
+.scan-text:focus
+ {
+  border: none;
+  width: 93%;
+  margin-right: 7px;
+  background-color: #f1f1f1;
+}
+
+.scan-btn{
+  /* text-align: end; */
+  border: none;
+  width: 30px;
+  height: 27px;
+  margin: auto;
+  background: url(../img/search.png) no-repeat center;
+  background-color: #f1f1f1;
+} 
 
 
 /* Быстрая бронь и Спецпредложение */
